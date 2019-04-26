@@ -32,9 +32,11 @@
 
 /* Top right text */
 .top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  transform: translate(-50%, -50%);
 }
 
 /* Bottom right text */
@@ -67,8 +69,9 @@
   z-index: -1;
 }
 
-.centered {
-  color: #f2f;
+.centered,
+.top-right {
+  color: #fff222;
   -webkit-animation: flash linear 1s infinite;
   animation: flash linear 1s infinite;
 }
@@ -96,8 +99,8 @@
 }
 /* Pulse class and keyframe animation */
 . {
-  -webkit-animation: pulse linear 5s infinite;
-  animation: pulse linear 5s infinite;
+  -webkit-animation: pulse linear 1s infinite;
+  animation: pulse linear 1s infinite;
 }
 @-webkit-keyframes pulse {
   0% {
